@@ -1,0 +1,27 @@
+En el video se menciona una guía clara y concisa sobre cómo configurar el entorno de desarrollo en Visual Studio Code (VS Code) para trabajar con .NET en menos de 10 minutos. A lo largo del video, se ofrece una experiencia rápida pero completa, abordando todo lo necesario para que cualquier principiante pueda estar listo para desarrollar aplicaciones en C# y .NET.
+
+En el video se menciona la importancia de contar con un entorno de desarrollo eficiente, especialmente para quienes desean trabajar con .NET y C#. Se destaca que, independientemente de si estás en Windows, macOS o Linux, la configuración de VS Code es fácil de adaptar, resaltando su naturaleza multiplataforma y ligera en comparación con otros entornos más pesados.
+
+Se enfatiza la relevancia de consultar la documentación oficial de Visual Studio Code y .NET antes de iniciar. Esto no solo ayuda a comprender mejor el entorno, sino que también te conecta con una comunidad de desarrolladores, aportando consejos útiles y soluciones a posibles problemas durante la instalación o el desarrollo.
+
+A partir de aquí, comienza la parte práctica. En el video se menciona cómo descargar e instalar Visual Studio Code desde su sitio web oficial. Luego, se muestra la instalación de las extensiones esenciales, especialmente la de C#, que habilita soporte para el desarrollo en .NET dentro de VS Code, y ofrece funcionalidades como:
+
+•	IntelliSense (sugerencias inteligentes de código)
+•	Depuración
+•	Refactorización del código
+
+También se recomienda otras extensiones útiles como GitLens para control de versiones, o Docker para la contenedorización de aplicaciones.
+
+En este punto del video, se muestra cómo crear un proyecto nuevo desde cero usando la CLI (Command Line Interface) de .NET. El comando que se utiliza es:
+
+dotnet new console -n MiPrimerProyecto
+
+Este comando crea un nuevo proyecto de consola en .NET que se puede abrir en VS Code. Se observa cómo la extensión de C# se activa automáticamente cuando abres el archivo y proporciona sugerencias de código. Además, se explica cómo depurar el proyecto fácilmente colocando un punto de interrupción y ejecutando el depurador con F5.
+
+Al final del video, se recomienda explorar más recursos sobre .NET, como la documentación de Microsoft Learn, y cómo puedes seguir extendiendo Visual Studio Code con más extensiones. Se mencionan herramientas adicionales como las extensiones de Azure para desarrollo en la nube, o Live Server para desarrollo web en tiempo real. También se habla de configuraciones opcionales como el formateo automático de código y la creación de carpetas de trabajo personalizadas para organizar proyectos de manera más eficiente.
+Extensiones adicionales sugeridas:
+
+•	Prettier: Para un formato uniforme del código.
+•	Code Spell Checker: Para evitar errores tipográficos en el código.
+•	Debugger for Chrome: Para integrar la depuración en navegadores, ideal para desarrollo web.
+

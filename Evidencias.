@@ -1,0 +1,203 @@
+*Variables y Tipos de Datos*
+
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Declaración de variables de diferentes tipos
+        int numero = 10;
+        string mensaje = "Hola, C#";
+        bool esCierto = true;
+        double precio = 19.99;
+
+        // Imprimir variables
+        Console.WriteLine("Número: " + numero);
+        Console.WriteLine("Mensaje: " + mensaje);
+        Console.WriteLine("Es cierto: " + esCierto);
+        Console.WriteLine("Precio: " + precio);
+    }
+}
+
+
+*Estructura de Control if*
+
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int edad = 18;
+
+        if (edad >= 18)
+        {
+            Console.WriteLine("Eres mayor de edad.");
+        }
+        else
+        {
+            Console.WriteLine("Eres menor de edad.");
+        }
+    }
+}
+
+
+*Bucle for*
+
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        for (int i = 0; i < 5; i++)
+        {
+            Console.WriteLine("Iteración número: " + i);
+        }
+    }
+}
+
+
+*Matrices (Arrays)*
+
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Declaración de una matriz de enteros
+        int[] numeros = { 1, 2, 3, 4, 5 };
+
+        // Acceder a los elementos de la matriz
+        Console.WriteLine("Primer número: " + numeros[0]);
+        Console.WriteLine("Segundo número: " + numeros[1]);
+
+        // Recorrer la matriz con un bucle for
+        for (int i = 0; i < numeros.Length; i++)
+        {
+            Console.WriteLine("Elemento en el índice " + i + ": " + numeros[i]);
+        }
+    }
+}
+
+
+*Métodos (Funciones)*
+
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Llamar a un método para sumar dos números
+        int resultado = Sumar(5, 3);
+        Console.WriteLine("La suma es: " + resultado);
+    }
+
+    // Definir un método que suma dos números
+    static int Sumar(int a, int b)
+    {
+        return a + b;
+    }
+}
+
+
+*Bucle while*
+
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int contador = 0;
+
+        // Bucle while que cuenta hasta 5
+        while (contador < 5)
+        {
+            Console.WriteLine("Contador: " + contador);
+            contador++;
+        }
+    }
+}
+
+
+*Fechas y Horas*
+
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Obtener la fecha y hora actual
+        DateTime fechaActual = DateTime.Now;
+        Console.WriteLine("Fecha y hora actual: " + fechaActual);
+
+        // Formatear la fecha
+        string formatoFecha = fechaActual.ToString("dd/MM/yyyy");
+        Console.WriteLine("Fecha formateada: " + formatoFecha);
+
+        // Sumar días a una fecha
+        DateTime fechaFutura = fechaActual.AddDays(7);
+        Console.WriteLine("Fecha dentro de una semana: " + fechaFutura);
+    }
+}
+
+
+*Cadenas (Strings)*
+
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        string nombre = "Juan";
+        string apellido = "Pérez";
+
+        // Concatenar cadenas
+        string nombreCompleto = nombre + " " + apellido;
+        Console.WriteLine("Nombre completo: " + nombreCompleto);
+
+        // Longitud de la cadena
+        Console.WriteLine("Longitud del nombre: " + nombre.Length);
+
+        // Convertir a mayúsculas
+        Console.WriteLine("Nombre en mayúsculas: " + nombre.ToUpper());
+    }
+}
+
+
+*Clases y Objetos*
+
+using System;
+
+class Persona
+{
+    // Propiedades de la clase Persona
+    public string Nombre { get; set; }
+    public int Edad { get; set; }
+
+    // Método de la clase
+    public void Saludar()
+    {
+        Console.WriteLine("Hola, mi nombre es " + Nombre + " y tengo " + Edad + " años.");
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Crear un objeto de la clase Persona
+        Persona persona1 = new Persona();
+        persona1.Nombre = "Carlos";
+        persona1.Edad = 25;
+
+        // Llamar al método Saludar
+        persona1.Saludar();
+    }
+}
